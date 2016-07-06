@@ -1,10 +1,5 @@
 public class SlowCode {
 	
-	private static int checkValue(String x) {
-		return Integer.parseInt(x);
-	}
-
-	
 	public static void main(String[] args) {
 	System.out.print("Loading...");
 	try {
@@ -22,7 +17,7 @@ public class SlowCode {
 		System.exit(1);
 	}
 
-	int val = checkValue(args[0]);
+	int val = Integer.parseInt(args[0]);
 
 	Other o = new Other(val);
 
