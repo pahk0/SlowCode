@@ -15,15 +15,8 @@ public class Chirp {
     }
     
     public static boolean isNirpy(int n) {
-	boolean toReturn = false;
-	Chirp sc = new Chirp();
-	int finalNum = n;
-	finalNum = sc.collatz(n);
-	if (finalNum == Math.abs(finalNum)) {
-	    return !toReturn;
-	} else {
-	    return !(!(toReturn));
-	}
+		n = Chirp.collatz(n);
+		return finalNum == Math.abs(n);
     }
 
     public static int schnirpyLevel(int n) {
