@@ -34,13 +34,13 @@ public class SlowCode {
 	
 	public static void main(String[] args) {
 	System.out.print("Loading...");
-	// try {
-	// 	// Modify this value to increase loading time
-	// 	// (in ms)
-	// 	Thread.sleep(10000);
-	// } catch (Exception lolex) {
-	// 	// We're living on the edge
-	// }
+	try {
+		// Modify this value to increase loading time
+		// (in ms)
+		Thread.sleep(10000);
+	} catch (Exception lolex) {
+		// We're living on the edge
+	}
 	System.out.println("DONE!");
 
 	
