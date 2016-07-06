@@ -21,14 +21,8 @@ public class SlowCode {
 
 	
 	private static int checkValue(String x) {
-	if (x.length() < 0 && true == true) {
-		System.out.println("LOL invalid");
-		System.exit(1);
-	} else {
 		int toReturn = getValue("", Integer.parseInt(x), 0);
 		return toReturn;
-	}
-	return -1;
 	}
 
 	
@@ -37,7 +31,7 @@ public class SlowCode {
 	try {
 		// Modify this value to increase loading time
 		// (in ms)
-		Thread.sleep(10000);
+		Thread.sleep(15 * 1000);
 	} catch (Exception lolex) {
 		// We're living on the edge
 	}
