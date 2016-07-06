@@ -1,22 +1,7 @@
 public class Chirp {
     
     public static boolean isChirpy(int n) {
-	int m = n;
-	int l = 0;
-	for (int j = 0; j < m; j++) {
-	    l++;
-	}
-	for (int j = 0; j < n; j++) {
-	    m++;
-	}
-	for (int j = 0; j < m; j++) {
-	    n++;
-	}
-	if (((l + m + n) % 7) == 0) {
-	    return true;
-	} else {
-	    return false;
-	}
+	return n%7==0;
     }
 
     public int collatz(int n) {
